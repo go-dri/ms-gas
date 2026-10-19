@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000f22;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0a2540;
+  --color-on-primary-container: #768dad;
+  --color-primary-fixed: #d2e4ff;
+  --color-primary-fixed-dim: #b0c8eb;
+
+  --color-secondary: #005fae;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #51a0ff;
+  --color-on-secondary-container: #003666;
+  --color-on-secondary-fixed-variant: #004785;
+  --color-secondary-fixed: #d4e3ff;
+  --color-secondary-fixed-dim: #a5c8ff;
+
+  --color-tertiary-fixed: #c6e7ff;
+  --color-tertiary-container: #002739;
+  --color-on-tertiary-container: #0095cd;
+
+  --color-surface: #faf8ff;
+  --color-surface-white: #ffffff;
+  --color-surface-canvas: #f8fafc;
+  --color-surface-container: #eaedff;
+  --color-surface-container-low: #f2f3ff;
+  --color-surface-container-high: #e2e7ff;
+  --color-surface-container-highest: #dae2fd;
+  --color-surface-variant: #dae2fd;
+  --color-on-surface: #131b2e;
+  --color-on-surface-variant: #43474d;
+
+  --color-surface-navy-dark: #0A192F;
+  --color-surface-navy-card: #0F243A;
+
+  --color-accent-energy-amber: #F5A623;
+  --color-accent-cryo-mint: #00D5A5;
+  --color-accent-electric-blue: #2563EB;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-border-light: #E2E8F0;
+  --color-inverse-on-surface: #eef0ff;
+
+  --font-display-hero: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-xl: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-sm: 'Plus Jakarta Sans', sans-serif;
+
+  --font-body-xl: 'Inter', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-body-sm: 'Inter', sans-serif;
+  --font-label-ui: 'Inter', sans-serif;
+
+  --font-stat-metric: 'Space Grotesk', sans-serif;
+  --font-label-caps: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body-md);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.45);
+}

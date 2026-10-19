@@ -1,0 +1,6 @@
+{
+  "name": "MS Gas Pure Precision",
+  "description": "대한민국 첨단 산업을 선도하는 초고순도 특수가스, 산업용 가스 및 에너지 솔루션 토탈 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
